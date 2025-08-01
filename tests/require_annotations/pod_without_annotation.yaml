@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: not-annotated-pod
+  name: not-annotated-pod
+spec:
+  containers:
+  - image: alpine
+    name: not-annotated-pod
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}
